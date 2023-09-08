@@ -1,0 +1,15 @@
+.name {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 80px;
+}
+
+.text {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: monocraft;
+    font-size: 18px;
+}
+
+
