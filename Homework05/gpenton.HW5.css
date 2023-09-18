@@ -1,0 +1,32 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid black;
+    background-color: #033A57;
+    color:white
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    background-color: #D47508;
+}
+
+p {
+    padding: 1em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #033A57;
+    color: white;
+}
