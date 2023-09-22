@@ -1,0 +1,25 @@
+.flex {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: repeat(3, 1fr);
+    
+}
+
+.grid > div {
+    background: linear-gradient(#f4ff61ff 10%, #ff9900ff 20%, #ff61cf, #5cecffff, #375971ff, #0a0c37ff 99%);
+    padding: 100px;
+    margin: 10px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+
