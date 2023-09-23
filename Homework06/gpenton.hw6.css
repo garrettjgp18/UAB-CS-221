@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: rgb(25, 24, 24);
 }
 
 .flex {
@@ -22,15 +22,22 @@
 }
 
 .grid > div {
-    background: linear-gradient(#f4ff61ff , #ff9900ff, #ff61cf, #5cecffff, #375971ff, #0a0c37ff 99%);
+    background-color: coral;
     padding: 100px;
     margin: 10px;
     font-size: 50px;
     border-radius: 20px;
     text-align: center;
+    border: 2px solid white;
+    transition: background-color 0.3s ease-in;
 }
 
 .item-1 {
     grid-area: 1/ 1 / 1 / -1;
+}
+
+.grid > div:hover {
+    background-color: red;
+    border: 2px solid black;
 }
 
