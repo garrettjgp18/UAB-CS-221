@@ -86,7 +86,7 @@ p {
     margin: 10px;
     display: grid;
     grid-auto-flow: dense;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
 
 }
@@ -129,6 +129,11 @@ p {
 .form ::placeholder {  
     color: rgb(185, 185, 185);
 }
+
+.farm {
+    position: sticky;
+}
+
 
 @media  screen and (max-width: 650px) {
 
