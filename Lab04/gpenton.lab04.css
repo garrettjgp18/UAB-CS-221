@@ -71,7 +71,6 @@ main {
     color: #05d9e8;
     
     width: 80%;
-    font-size: 20px;
 }
 
 h1 {
@@ -130,3 +129,23 @@ p {
 .form ::placeholder {  
     color: rgb(185, 185, 185);
 }
+
+@media  screen and (max-width: 650px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    nav a{
+        display:inline-flex;
+        margin-right: 10px;
+    }
+
+    .name{
+        font-size: 30px;
+    }
+    
+} 
+    
