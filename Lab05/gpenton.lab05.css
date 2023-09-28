@@ -86,8 +86,10 @@ p {
     margin: 10px;
     display: grid;
     grid-auto-flow: dense;
-    grid-template-rows: auto;
+    grid-template-rows: minmax(auto, 1fr);
     grid-template-columns: 1fr;
+    justify-content: start;
+    align-items: start;
 
 }
 
@@ -97,11 +99,12 @@ p {
     box-shadow: 5px 5px 3px #ff2a6d;
     border-radius: 25px;
     padding: 20px;
+    max-width: 100%;
+
 }
 
 
 .form {
-    margin-left: auto;
     text-align: center;
     margin-top: 150px;
 }
@@ -135,7 +138,7 @@ p {
 }
 
 
-@media  screen and (max-width: 650px) {
+@media  screen and (max-width: 700px) {
 
     h1 {
         font-size: 30px;
@@ -151,6 +154,12 @@ p {
     .name{
         font-size: 30px;
     }
+
+    .projects > div {
+        width: 100%;
+    }
+
+    
     
 } 
     
