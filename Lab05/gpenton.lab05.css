@@ -69,8 +69,8 @@ a:hover {
 
 main {
     margin-left: 40px;
-    color: #05d9e8;
     width: 80%;
+    color: #05d9e8;
 }
 
 h1 {
@@ -148,7 +148,7 @@ p {
         font-size: 30px;
     }
     p {
-        font-size: 25px;
+        font-size: 22px;
     }
     nav a{
         display:inline-flex;
@@ -163,6 +163,9 @@ p {
         width: 100%;
     }
 
+    .here {
+        font-size: 22px;
+    }
     
     
 } 
