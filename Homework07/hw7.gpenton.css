@@ -1,36 +1,114 @@
-
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    background: #2c3439;
-    color: #ced9bf;
+    padding: 0;
+    background-color: #32424b;
+    color: #c09576;
 }
 
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+    width: 100vw;
+    text-align: center;
+    position: sticky;
+    overflow: hidden;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+
+    background-color: red;
+
 }
+
 
 .grid {
-
     display: grid;
-    width: 100vw;
-    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: dense;
+    gap: 15px;
+    row-gap: 45px;
+    padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+
 }
 
 .grid > div {
-    background-color: rgba(130, 89, 89, 0.767);
-    height: 300px;
+    border: 5px solid #c09576;
     width: 300px;
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+
+    transition: transform 0.2s ease-in-out;
+    transition: opacity 0.5s ease;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.grid > div:hover {
+    transform: scale(1.1); 
+}
+
+.grid > div:hover::before {
+    content: attr(descr);
+    /*I knew there was a way to make a mimic variable within CSS, so I googled "How can I make a custom variable within css that would allow me to set descriptions of images". It recommended the attr() function.  */
     text-align: center;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(120deg, grey, white);
+    z-index: 1;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.grid > div:hover::after {
+    content: "🔎";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
+.item1{
+    background-image: url("dragon.jpg");
+}
+
+#item2 {
+    background-image: url("castle.jpg");
+}
+
+#item3 {
+    background-image: url("wheel.jpg");
+}
+
+#item4 {
+    background-image: url("city.jpg");
+}
+
+#item5 {
+    background-image: url("him.jpg");
+}
+
+#item6 {
+    background-image: url("onion.jpg");
+}
+
+#item7 {
+    background-image: url("meAfterLiesofP.jpg");
+}
+
+#item8 {
+    background-image: url("window.jpg");
 }
