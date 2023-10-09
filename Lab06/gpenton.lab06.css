@@ -75,6 +75,10 @@ a:hover {
     margin-right: auto;
 }
 
+.aboutSpace {
+    margin-top: 170px !important;
+}
+
 main {
     margin-left: 10%;
     /* I have no idea why this centers the main */
