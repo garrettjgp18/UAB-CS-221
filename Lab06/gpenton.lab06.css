@@ -266,5 +266,9 @@ p {
       .menu__item:hover {
         background-color: #CFD8DC;
       }
+
+      img {
+        width: 40px;
+      }
 } 
     
