@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Exo 2', sans-serif;
-    background-color: #000011;
+   background-color: #000011;
 }
 
 
@@ -31,6 +31,7 @@ header {
     text-decoration: underline #ff2a6d;
     position: relative;
 }
+
 
 
 a {
@@ -60,26 +61,35 @@ a:hover {
     padding: 20px;
 }
 
+.headWithEmoji { /* added class modifier for the About Me section to change spacing between divs */
+    display: inline-flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 95%;
+}
+
 .flex > div {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 50px;
     padding-top: 20px;
     margin-right: auto;
 }
 
 main {
-    margin-left: 40px;
+    margin-left: 10%;
+    /* I have no idea why this centers the main */
     color: #05d9e8;
     width: 80%;
 }
 
 h1 {
     color:rgb(231, 230, 230);
-    text-shadow: 3px 3px 4px #747800;
+    text-shadow: 5px 4px 4px #747800;
 }
 
 p {
-    font-size: 40px;
+    margin-top: 5px;
+    font-size: 24px;
 }
 
 .projects {
@@ -94,7 +104,7 @@ p {
 }
 
 .projects > div {
-    margin-top: 30px;
+    margin-bottom: 30px;
     border: 3px solid #ff2a6d;
     box-shadow: 5px 5px 3px #ff2a6d;
     border-radius: 25px;
@@ -105,7 +115,6 @@ p {
 
 
 .form {
-    color: red;
     text-align: center;
     margin-top: 150px;
     
@@ -141,20 +150,18 @@ p {
 
 
 
-.farm {
-    position: sticky;
-}
+
 
 .here {
-    font-size: 40px;
+    font-size: 24px;
     margin-right: auto;
 }
 
-.hamburger-menu {
+.hamburger-menu { /*sets the hamburger to where it wont show up while view is above media query */
     display: none;
 }
 
-@media  screen and (max-width: 700px) {
+@media  screen and (max-width: 800px) {
 
     h1 {
         font-size: 23px;
@@ -169,7 +176,7 @@ p {
 
 
     .name{
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .projects > div {
@@ -184,6 +191,10 @@ p {
         display: contents;
     }
 
+    /* 
+    Added hamburger navigation once window is at or less than 800px. Code borrowed,
+    but modified from https://codepen.io/alvarotrigo/pen/yLzaPVJ
+     */
     #menu__toggle {
         opacity: 0;
       }
@@ -220,6 +231,7 @@ p {
         background-color: #ff2a6d;
         transition-duration: .25s;
       }
+
       .menu__btn > span::before {
         content: '';
         top: -8px;
@@ -229,11 +241,11 @@ p {
         top: 8px;
       }
       .menu__box {
-        display: block;
+        display:block;
         position: fixed;
-        top: 0;
+        top: 10px;
         right: -100%;
-        width: 40%;
+        width: auto;
         height: 100%;
         margin: 0;
         padding: 80px 0;
