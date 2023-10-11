@@ -64,6 +64,8 @@ input::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
     text-align: center;
     margin-top: 200px;
     color: rgb(255, 255, 255);
+    text-decoration: red underline 4px;
+    font-size: 20px;
 }
 
 
