@@ -1,0 +1,63 @@
+* {
+    top: 0;
+    left: 0;
+    background-color: #435df6;
+    font-family: 'Press Start 2P';
+}
+
+.grade_prompt {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+} 
+
+.input {
+    padding-top: 25px;
+    margin: auto auto;
+    width: 80%;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    color: black;
+    background-color: rgb(57, 57, 57);
+    text-align: center;
+    font-size: 25px;
+}
+
+input:focus {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+}
+
+.button {
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    width: 80%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.522);
+    color: rgb(27, 26, 26);
+}
+
+
+/* 
+https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+*/
+input::-webkit-outer-spin-button, ::-webkit-inner-spin-button{
+    appearance: none;
+    
+}
+
+
+
+
