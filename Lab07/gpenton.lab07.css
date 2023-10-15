@@ -182,6 +182,10 @@ p {
     display: none;
 }
 
+img    {
+    width: 130px;
+}
+
 @media  screen and (max-width: 800px) {
 
     h1 {
