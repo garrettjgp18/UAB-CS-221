@@ -67,6 +67,7 @@ a:hover {
     justify-content: space-between;
     align-items: flex-end;
     width: 95%;
+    letter-spacing: 2px;
 }
 
 .flex > div {
@@ -90,6 +91,7 @@ main {
 h1 {
     color:rgb(231, 230, 230);
     text-shadow: 5px 4px 4px #747800;
+    letter-spacing: 2px;
 }
 
 p {
@@ -168,7 +170,7 @@ p {
 }
 
 img    {
-    width: 130px;
+    width: 70px;
 }
 
 @media  screen and (max-width: 800px) {
