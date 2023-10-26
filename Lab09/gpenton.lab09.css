@@ -1,0 +1,37 @@
+* {
+    background-color: #c7d8c6a4;
+    top: 0;
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    color: #FF5035;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+main > div {
+    border: 5px solid black;
+    border-radius: 20px;
+    background: #c7d8c6;
+    margin: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: color, background, 0.7s;
+}
+
+div:hover {
+    background: #FF5035;
+    color: #c7d8c6;
+}
+
