@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Computer chose: " + computerChoice);
             console.log("You loose...");
             console.log(" ")
-            gameResult.innerHTML = "You loose...\n"
+            gameResult.innerHTML = "You lose...\n"
         } else {
             console.log("Computer chose: " + computerChoice);
             console.log("You Win!");
